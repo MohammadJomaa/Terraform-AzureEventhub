@@ -40,11 +40,11 @@ subscription ID, set the account with the Azure CLI.
 cd Terraform-AzureEventhub
 ## you can check out main.tf file 
 
-terraform init
-terraform fmt
-terraform validate
-terraform apply
-terraform show
+`terraform init`
+`terraform fmt`
+`terraform validate`
+`terraform apply`
+`terraform show` 
 
 
 
