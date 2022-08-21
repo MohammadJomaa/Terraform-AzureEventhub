@@ -37,6 +37,7 @@ subscription ID, set the account with the Azure CLI.
 ## Write configuration
 
 `git clone https://github.com/MohammadJomaa/Terraform-AzureEventhub.git`
+
 `cd Terraform-AzureEventhub`
 
 ## check out main.tf file 
