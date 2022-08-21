@@ -1,4 +1,4 @@
-# Create  Eventhub in Azure by Terraform
+# Create  an Eventhub in Azure by Terraform
 1. Create Eventhub namespace,
 2. Create an event hub module for deploying an event hub into an existing event hub namespace
 3. Create a event hub consumer groups and deploy it into an existing eventhub namespace
