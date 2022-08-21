@@ -13,31 +13,32 @@ If you are using a paid subscription, you may be charged for the resources neede
 
 #### https://learn.hashicorp.com/tutorials/terraform/azure-build
 
-choco install terraform
+`choco install terraform`
 
-Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi
-Copy
+`Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi`
 
-az login
+
+`az login`
 ## login 
 Find the id column for the subscription account you want to use.
 Once you have chosen the account
 subscription ID, set the account with the Azure CLI.
 
-***az account set --subscription "35akss-subscription-id"***
-***az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"***
+`az account set --subscription "35akss-subscription-id"`
+`az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"`
 
 # Set your environment variables
 
-***$Env:ARM_CLIENT_ID = "<APPID_VALUE>"***
-***$Env:ARM_CLIENT_SECRET = "<PASSWORD_VALUE>"***
-***$Env:ARM_SUBSCRIPTION_ID = "<SUBSCRIPTION_ID>"***
-***$Env:ARM_TENANT_ID = "<TENANT_VALUE>"***
+`$Env:ARM_CLIENT_ID = "<APPID_VALUE>"`
+`$Env:ARM_CLIENT_SECRET = "<PASSWORD_VALUE>"`
+`$Env:ARM_SUBSCRIPTION_ID = "<SUBSCRIPTION_ID>"`
+`$Env:ARM_TENANT_ID = "<TENANT_VALUE>"`
 
 ## Write configuration
 
-**git clone https://github.com/MohammadJomaa/Terraform-AzureEventhub.git***
-cd Terraform-AzureEventhub
+`git clone https://github.com/MohammadJomaa/Terraform-AzureEventhub.git`
+`cd Terraform-AzureEventhub`
+
 ## you can check out main.tf file 
 
 `terraform init`
