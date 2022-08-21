@@ -24,9 +24,7 @@ Find the id column for the subscription account you want to use.
 Once you have chosen the account
 subscription ID, set the account with the Azure CLI.
 
-***All this text is important***
-
-**az account set --subscription "35akss-subscription-id" 
+***az account set --subscription "35akss-subscription-id"***
 **az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"
 
 # Set your environment variables
