@@ -1,0 +1,34 @@
+choco install terraform
+
+#https://learn.hashicorp.com/tutorials/terraform/azure-build
+
+Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi
+Copy
+
+az login
+#login 
+#Find the id column for the subscription account you want to use.
+#Once you have chosen the account
+#subscription ID, set the account with the Azure CLI.
+ 
+az account set --subscription "35akss-subscription-id"
+
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"
+
+$Env:ARM_CLIENT_ID = "<APPID_VALUE>"
+$Env:ARM_CLIENT_SECRET = "<PASSWORD_VALUE>"
+$Env:ARM_SUBSCRIPTION_ID = "<SUBSCRIPTION_ID>"
+$Env:ARM_TENANT_ID = "<TENANT_VALUE>"
+
+#fill out main.tf file
+
+then
+terraform init
+terraform fmt
+terraform validate
+terraform apply
+#click yes
+
+terraform show
+
+-------------------------------------
