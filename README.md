@@ -25,26 +25,26 @@ Once you have chosen the account
 subscription ID, set the account with the Azure CLI.
 
 ***az account set --subscription "35akss-subscription-id"***
-**az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"
+***az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"***
 
 # Set your environment variables
 
-**$Env:ARM_CLIENT_ID = "<APPID_VALUE>"
-**$Env:ARM_CLIENT_SECRET = "<PASSWORD_VALUE>"
-**$Env:ARM_SUBSCRIPTION_ID = "<SUBSCRIPTION_ID>"
-**$Env:ARM_TENANT_ID = "<TENANT_VALUE>"
+***$Env:ARM_CLIENT_ID = "<APPID_VALUE>"***
+***$Env:ARM_CLIENT_SECRET = "<PASSWORD_VALUE>"***
+***$Env:ARM_SUBSCRIPTION_ID = "<SUBSCRIPTION_ID>"***
+***$Env:ARM_TENANT_ID = "<TENANT_VALUE>"***
 
 ## Write configuration
 
-**git clone https://github.com/MohammadJomaa/Terraform-AzureEventhub.git
+**git clone https://github.com/MohammadJomaa/Terraform-AzureEventhub.git***
 cd Terraform-AzureEventhub
 ## you can check out main.tf file 
 
-terraform init
+**terraform init
 terraform fmt
 terraform validate
 terraform apply
-terraform show
+terraform show**
 
 
 
