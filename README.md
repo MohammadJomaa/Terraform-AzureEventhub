@@ -19,12 +19,13 @@ If you are using a paid subscription, you may be charged for the resources neede
 
 
 `az login`
-## login 
+## Login 
 Find the id column for the subscription account you want to use.
 Once you have chosen the account
 subscription ID, set the account with the Azure CLI.
 
 `az account set --subscription "35akss-subscription-id"`
+
 `az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"`
 
 # Set your environment variables
