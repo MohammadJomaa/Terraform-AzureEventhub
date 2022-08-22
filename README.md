@@ -28,6 +28,8 @@ subscription ID, set the account with the Azure CLI.
 
 `az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"`
 
+save the output of this command because, we will use it in the next step
+
 # Set your environment variables
 
 - `$Env:ARM_CLIENT_ID = "<APPID_VALUE>"`
