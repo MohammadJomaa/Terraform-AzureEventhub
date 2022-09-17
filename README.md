@@ -10,14 +10,18 @@ If you are using a paid subscription, you may be charged for the resources neede
 - Terraform 0.14.9 or later
 
 - The Azure CLI Tool installed #https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+
+`Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi`
+
 - INSTALLING CHOCOLATEY   #https://chocolatey.org/install
 
 `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
 #### https://learn.hashicorp.com/tutorials/terraform/azure-build
 
+- Terraform installtion
+
 `choco install terraform`
 
-`Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi`
 
 
 `az login`
