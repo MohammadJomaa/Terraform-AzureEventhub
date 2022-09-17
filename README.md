@@ -9,8 +9,9 @@ If you are using a paid subscription, you may be charged for the resources neede
 
 - Terraform 0.14.9 or later
 
-- The Azure CLI Tool installed
-
+- The Azure CLI Tool installed #https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+- INSTALLING CHOCOLATEY   #https://chocolatey.org/install
+- Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 #### https://learn.hashicorp.com/tutorials/terraform/azure-build
 
 `choco install terraform`
