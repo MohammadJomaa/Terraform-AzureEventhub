@@ -14,15 +14,16 @@ If you are using a paid subscription, you may be charged for the resources neede
 - INSTALLING CHOCOLATEY   #https://chocolatey.org/install
 
    `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
-#### https://learn.hashicorp.com/tutorials/terraform/azure-build
+
 - Terraform 0.14.9 or later
 
   `choco install terraform`
 
 - install git #https://git-scm.com/downloads
+#### https://learn.hashicorp.com/tutorials/terraform/azure-build
 
-`az login`
 ## Login 
+`az login`
 Find the id column for the subscription account you want to use.
 Once you have chosen the account
 subscription ID, set the account with the Azure CLI.
